@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <title>INICIO</title>
+  </head>
+  <body>
+    <h1>Nuevo producto</h1>
+
+    <div class="form">
+      <label for="make">Marca</label><br />
+      <input type="text" name="make" id="make" required /><br />
+      <label for="model">Modelo</label><br />
+      <input type="text" name="model" id="model" required /><br />
+      <label for="price">Precio</label><br />
+      <input type="number" name="price" id="price" required /><br />
+      <label for="thumbnail">Link de imagen</label><br />
+      <input type="link" name="thumbnail" id="thumbnail" required /><br />
+      <label for="description">Tipo de unidad</label><br />
+      <input type="text" name="description" id="description" required /><br />
+      <label for="code">Codigo</label><br />
+      <input type="text" name="code" id="code" required /><br />
+      <label for="stock">Unidades disponibles</label><br />
+      <input type="number" name="stock" id="stock" required /><br />
+      <button id="enviar">Enviar</button>
+    </div>
+
+    <%- include('form.ejs') -%> 
+    <%- include('productos.ejs') -%>
+
+    <script src="main.js"></script>
+  </body>
+</html>

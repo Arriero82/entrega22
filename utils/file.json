@@ -1,0 +1,65 @@
+[
+  {
+    "make": "Renault",
+    "model": "Duster",
+    "price": "50000",
+    "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP._Sy4qWVmBwixA1glVhkTzgHaE8%26pid%3DApi&f=1",
+    "description": "SUV",
+    "code": "ABB",
+    "stock": 10
+  },
+  {
+    "make": "Dodge",
+    "model": "RAM",
+    "price": "200000",
+    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_997702-MLA48793893569_012022-W.jpg",
+    "description": "truck",
+    "code": "ACC",
+    "stock": 10
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla",
+    "price": "20000",
+    "thumbnail": "https://cdn.motor1.com/images/mgl/qnP2R/s3/oficial-todo-sobre-el-nuevo-toyota-corolla-hybrid-llega-este-verano-a-la-argentina.jpg",
+    "description": "sedan",
+    "code": "AAA",
+    "stock": 10
+  },
+  {
+    "make": "Ford",
+    "model": "Mustang",
+    "price": "500000",
+    "thumbnail": "https://cdn.motor1.com/images/mgl/qj8lq/s1/nuova-ford-mustang-shelby-gt500.jpg",
+    "description": "sport",
+    "code": "AAA",
+    "stock": 10
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Camaro",
+    "price": "450000",
+    "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.motor1.com%2Fimages%2Fmgl%2FpmxgW%2Fs1%2Fchevrolet-camaro-coupe.jpg&f=1&nofb=1&ipt=6144b305d232e0b5e90c5e92de1189a3a8ab553b2d29d4462852330f8d605983&ipo=images",
+    "description": "sport",
+    "code": "AAA",
+    "stock": 10
+  },
+  {
+    "make":"Toyota",
+    "model": "Corolla Cross",
+    "price": "25000",
+    "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.carbuzz.com%2Fgallery-images%2F2022-toyota-corolla-cross-forward-vision-carbuzz-854191-1600.jpg&f=1&nofb=1&ipt=dab812b370cd2f07b32537bb5f9aefeee9c105f751f2d7e17ea78e11a7c69b6d&ipo=images",
+    "description": "SUV",
+    "code": "ABB",
+    "stock": 10
+  },
+  {
+    "make":"Ford",
+    "model": "Puma",
+    "price": "63000",
+    "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lifequestalliance.com%2Fwp-content%2Fuploads%2F2020%2F11%2F2022-Ford-Puma-awd-automatic-america-advert-.jpg&f=1&nofb=1&ipt=9678c4029722969c951c65c57344e24ca17751043fe0d9c876fa51117730b300&ipo=images",
+    "description": "SUV",
+    "code": "ABB",
+    "stock": 10
+  }
+]

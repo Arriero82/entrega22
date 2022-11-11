@@ -18,6 +18,13 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
+  #listaProductosFaker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
   
   p{
     text-align: center;

@@ -1,6 +1,6 @@
 const socket = io.connect() 
 
-console.log('prueba');
+console.log('prueba desde mainFaker');
 
 const render = (prods) => {     
     const listado = prods.map((elem) => {

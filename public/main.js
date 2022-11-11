@@ -1,5 +1,7 @@
 const socket = io.connect() 
 
+console.log('prueba desde main.js');    
+
 const addProduct = () => {
     const make = document.querySelector('#make').value;
     const model = document.querySelector('#model').value;

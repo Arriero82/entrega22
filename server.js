@@ -20,13 +20,13 @@ let str = []
 const prodFaker = function(){
   str = []
     for (let i = 0; i < 5; i++) {
-        str.push({make: vehicle.manufacturer(), model: vehicle.model(), price: commerce.price(3000,5000,0), thumbnail: image.transport(400,400,true)});
+        str.push({make: vehicle.manufacturer(), model: vehicle.model(), price: commerce.price(3000,5000,0), thumbnail: image.transport(500,250,true)});
       } 
     return str;      
 }
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));  
 
 app.use(express.static(path.join(__dirname, "/public")));
 
@@ -35,13 +35,13 @@ app.set("view engine", "ejs");
 
 //app.use("/", productos);
 
+app.get("/api/productos", async (req, res) => {
+  res.status(200).render("pages/productosFaker");
+})
+
 app.get("/", async (req, res) => {
   res.status(200).render("pages/index");
 });
-
-app.get("/api/productos-test", async (req, res) => {
-  res.status(200).render("pages/productosFaker");
-})
 
 app.all("*", (req, res) => {
   res.json({ res: "no se puede acceder a esta ruta" });
@@ -56,7 +56,7 @@ const server = httpServer.listen(PORT, () => {
 io.on("connection", async (cliente) => {
   console.log(`cliente ${cliente.id} conectado`);
 
-  //cliente.emit("productos-server", await products.getAll());
+  cliente.emit("productos-server", await products.getAll());
   //cliente.emit('productos-server', await prodFaker())
   cliente.emit('productos-faker', prodFaker())
 

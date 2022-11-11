@@ -56,11 +56,11 @@ const server = httpServer.listen(PORT, () => {
 io.on("connection", async (cliente) => {
   console.log(`cliente ${cliente.id} conectado`);
 
-  cliente.emit("productos-server", await products.getAll());
-
+  //cliente.emit("productos-server", await products.getAll());
+  //cliente.emit('productos-server', await prodFaker())
   cliente.emit('productos-faker', prodFaker())
 
-  cliente.on("new-product", async (producto) => { 
+  cliente.on("new-product", async (producto) => {   
     await products.save(producto);
     io.sockets.emit("productos-server", await products.getAll());
   });

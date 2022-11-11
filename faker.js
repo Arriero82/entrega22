@@ -5,7 +5,7 @@ const { vehicle, commerce, image } = faker;
 
 let str = []
 
-const prodFaker = function(){
+function prodFaker(){
     str = []
     for (let i = 0; i < 5; i++) {
         str.push({make: vehicle.manufacturer(), model: vehicle.model(), price: commerce.price(3000,5000,0), image: image.transport(500,500)});
